@@ -7,7 +7,7 @@ on:
 
 jobs:
   update-notebooks:
-    if: (github.event_name == 'schedule' || (github.event.issue.title == '[dashboard] Refresh Notebooks'  && github.actor == 'hamelsmu' && github.event_name == 'issues')) && github.repository == 'github/covid19-dashboard'
+    if: (github.event_name == 'schedule' || (github.event.issue.title == '[dashboard] Refresh Notebooks'  && github.actor == '4722794' && github.event_name == 'issues')) && github.repository == '4722794/blagueblog'
     runs-on: ubuntu-latest
     steps:
   
