@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>COVID-19 Case Race | Coronavirus Dashboard</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="COVID-19 Case Race" />
+<meta name="author" content="Hargun Oberoi" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A race chart to see rising cases around the world" />
+<meta property="og:description" content="A race chart to see rising cases around the world" />
+<link rel="canonical" href="https://4722794.github.io/blagueblog/2020/03/21/covid19exp.html" />
+<meta property="og:url" content="https://4722794.github.io/blagueblog/2020/03/21/covid19exp.html" />
+<meta property="og:site_name" content="Coronavirus Dashboard" />
+<meta property="og:image" content="https://4722794.github.io/blagueblog/images/covid-overview.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-21T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://4722794.github.io/blagueblog/images/covid-overview.png" />
+<meta property="twitter:title" content="COVID-19 Case Race" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@Hargun Oberoi" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Hargun Oberoi"},"headline":"COVID-19 Case Race","dateModified":"2020-03-21T00:00:00-05:00","datePublished":"2020-03-21T00:00:00-05:00","description":"A race chart to see rising cases around the world","image":"https://4722794.github.io/blagueblog/images/covid-overview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://4722794.github.io/blagueblog/2020/03/21/covid19exp.html"},"@type":"BlogPosting","url":"https://4722794.github.io/blagueblog/2020/03/21/covid19exp.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/blagueblog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://4722794.github.io/blagueblog/feed.xml" title="Coronavirus Dashboard" /><link rel="shortcut icon" type="image/x-icon" href="/blagueblog/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>COVID-19 Case Race | Coronavirus Dashboard</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="COVID-19 Case Race" />
+<meta name="author" content="Hargun Oberoi" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="A race chart to see rising cases around the world" />
+<meta property="og:description" content="A race chart to see rising cases around the world" />
+<link rel="canonical" href="https://4722794.github.io/blagueblog/2020/03/21/covid19exp.html" />
+<meta property="og:url" content="https://4722794.github.io/blagueblog/2020/03/21/covid19exp.html" />
+<meta property="og:site_name" content="Coronavirus Dashboard" />
+<meta property="og:image" content="https://4722794.github.io/blagueblog/images/covid-overview.png" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-21T00:00:00-05:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://4722794.github.io/blagueblog/images/covid-overview.png" />
+<meta property="twitter:title" content="COVID-19 Case Race" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@Hargun Oberoi" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Hargun Oberoi"},"headline":"COVID-19 Case Race","dateModified":"2020-03-21T00:00:00-05:00","datePublished":"2020-03-21T00:00:00-05:00","description":"A race chart to see rising cases around the world","image":"https://4722794.github.io/blagueblog/images/covid-overview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://4722794.github.io/blagueblog/2020/03/21/covid19exp.html"},"@type":"BlogPosting","url":"https://4722794.github.io/blagueblog/2020/03/21/covid19exp.html","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+<link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
+<link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"><link type="application/atom+xml" rel="alternate" href="https://4722794.github.io/blagueblog/feed.xml" title="Coronavirus Dashboard" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous">
+    <script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" integrity="sha384-y23I5Q6l+B6vatafAwxRu/0oK/79VlbSz7Q9aiSZUvyWYIYsd+qj+o24G5ZU2zJz" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement( document.body, {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "[%", right: "%]", display: true},
+            {left: "$", right: "$", display: false}
+        ]}
+        );
+    });
+    </script>
+
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head><body><header class="site-header">
+
+    <div class="wrapper"><a class="site-title" rel="author" href="/blagueblog/">Coronavirus Dashboard</a></div>
+  </header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">COVID-19 Case Race</h1><p class="page-description">A race chart to see rising cases around the world</p><p class="post-meta post-meta-title"><!-- <time class="dt-published" datetime="2020-03-21T00:00:00-05:00" itemprop="datePublished">
+        Mar 21, 2020
+      </time> -->by 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Hargun Oberoi</span></span>
+    </p>
+
+    
+
+    
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2020-03-21-covid19exp.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># #hide</span>
+<span class="c1"># g = g.reset_index([&#39;date&#39;])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># #hide</span>
+<span class="c1"># g = g[g.group.notna()]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># #hide</span>
+<span class="c1"># colors = dict(zip(</span>
+<span class="c1">#     [&quot;Oceania&quot;, &quot;Europe&quot;, &quot;Asia&quot;, &quot;South America&quot;, &quot;Middle East&quot;, &quot;North America&quot;, &quot;Africa&quot;],</span>
+<span class="c1">#     [&quot;#adb0ff&quot;, &quot;#ffb3ff&quot;, &quot;#90d595&quot;, &quot;#e48381&quot;, &quot;#aafbff&quot;, &quot;#f7bb5f&quot;, &quot;#eafb50&quot;]</span>
+<span class="c1"># ))</span>
+<span class="c1"># group_lk = g.set_index(&#39;name&#39;)[&#39;group&#39;].to_dict()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># #hide</span>
+<span class="c1"># fig, ax = plt.subplots(figsize=(15, 8))</span>
+
+<span class="c1"># def draw_barchart(current_day):</span>
+<span class="c1">#     dff = g[g[&#39;day&#39;].eq(current_day)].sort_values(by=&#39;value&#39;, ascending=True).tail(10)</span>
+<span class="c1">#     ax.clear()</span>
+<span class="c1">#     ax.barh(dff[&#39;name&#39;], dff[&#39;value&#39;], color=[colors[group_lk[x]] for x in dff[&#39;name&#39;]])</span>
+<span class="c1">#     dx = dff[&#39;value&#39;].max() / 200</span>
+    
+<span class="c1">#     for i, (value, name) in enumerate(zip(dff[&#39;value&#39;], dff[&#39;name&#39;])):</span>
+<span class="c1">#         ax.text(value-dx, i,     name,           size=14, weight=600, ha=&#39;right&#39;, va=&#39;bottom&#39;)</span>
+<span class="c1">#         ax.text(value-dx, i-.25, group_lk[name], size=10, color=&#39;#444444&#39;, ha=&#39;right&#39;, va=&#39;baseline&#39;)</span>
+<span class="c1">#         ax.text(value+dx, i,     f&#39;{value:,.0f}&#39;,  size=14, ha=&#39;left&#39;,  va=&#39;center&#39;)</span>
+<span class="c1">#     ax.text(1, 0.4, current_day, transform=ax.transAxes, color=&#39;#777777&#39;, size=46, ha=&#39;right&#39;, weight=800)</span>
+<span class="c1">#     ax.text(0, 1.06, &#39;Population (thousands)&#39;, transform=ax.transAxes, size=12, color=&#39;#777777&#39;)</span>
+<span class="c1">#     ax.xaxis.set_major_formatter(ticker.StrMethodFormatter(&#39;{x:,.0f}&#39;))</span>
+<span class="c1">#     ax.xaxis.set_ticks_position(&#39;top&#39;)</span>
+<span class="c1">#     ax.tick_params(axis=&#39;x&#39;, colors=&#39;#777777&#39;, labelsize=12)</span>
+<span class="c1">#     ax.set_yticks([])</span>
+<span class="c1">#     ax.margins(0, 0.01)</span>
+<span class="c1">#     ax.grid(which=&#39;major&#39;, axis=&#39;x&#39;, linestyle=&#39;-&#39;)</span>
+<span class="c1">#     ax.set_axisbelow(True)</span>
+    
+<span class="c1">#     ax.text(0, 1.15, &#39;Coronavirus&#39;,</span>
+<span class="c1">#             transform=ax.transAxes, size=24, weight=600, ha=&#39;left&#39;, va=&#39;top&#39;)</span>
+<span class="c1"># #     ax.text(1, 0, &#39;by @pratapvardhan; credit @jburnmurdoch&#39;, transform=ax.transAxes, color=&#39;#777777&#39;, ha=&#39;right&#39;,</span>
+<span class="c1"># #             bbox=dict(facecolor=&#39;white&#39;, alpha=0.8, edgecolor=&#39;white&#39;))</span>
+<span class="c1">#     plt.box(False)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># #hide_input</span>
+<span class="c1"># fig, ax = plt.subplots(figsize=(15, 8))</span>
+<span class="c1"># animator = animation.FuncAnimation(fig, draw_barchart, frames=range(g.day.values.min(), g.day.values.max()))</span>
+<span class="c1"># HTML(animator.to_jshtml())</span>
+<span class="c1"># # or use animator.to_html5_video() or animator.save() </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/blagueblog/2020/03/21/covid19exp.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/blagueblog/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/blagueblog/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/blagueblog/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p></p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
